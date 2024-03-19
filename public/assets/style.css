@@ -9,7 +9,7 @@ html {
 
 body {
     height: 100%;
-    background-color: rgb(255 246 246);
+    background-color: #ffffff;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-size: 16px;
@@ -80,7 +80,8 @@ img {
     margin: 10px auto;
     padding-bottom: 60px;
     font-size: 1em;
-    
+    border-left: 1px solid #0000001f;
+    border-right: 1px solid #0000001f;
 }
 
 .container-box {
@@ -187,7 +188,7 @@ section.news-section {
     position: relative;
 }
 
-.news-image {
+.news-image, .news-image-place {
     position: relative;
     width: 100%;
     height: 309px;
@@ -196,7 +197,23 @@ section.news-section {
     cursor: pointer;
 }
 
-.news-image img {
+.news-image-place {
+    background: #f1f1f1;
+}
+
+.text-title-place {
+    padding: 12px 0;
+    background: #f1f1f1;
+    width: 60%;
+}
+
+.text-date-place {
+    padding: 9px 0;
+    background: #f1f1f1;
+    width: 30%;
+}
+
+.news-image img, .news-image-place img {
     transition: transform 100ms ease-in-out;
 }
 
@@ -211,7 +228,6 @@ section.news-section {
 
 .news-image:hover::after {
     background: linear-gradient(0deg, #00000091 30%, transparent);
-    
 }
 
 .news-image::after {
@@ -278,6 +294,10 @@ h1 {
     min-height: 91px;
 }
 
+.text-container.initial-display {
+    border-top: 2px solid #e7e7e7;
+}
+
 .text-md {
     font-size: 16px;
 }
@@ -324,7 +344,7 @@ h1 {
 
 .social-network {
     background: #fff;
-    border-top: 4px solid #ff3939;
+    border-top: 3px solid #ff5454;
 }
 
 .sn-wrapper {
@@ -360,4 +380,15 @@ h1 {
 
 .pr-3 {
     padding-right: 3px;
+}
+
+.loader-spinner {
+    width: 32px;
+    margin: 8px auto 10px auto;
+}
+
+.plain-feed-text {
+    color: #000000d4;
+    padding: 0 10px 8px 10px;
+    font-size: 15px;
 }
