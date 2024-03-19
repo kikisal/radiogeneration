@@ -9,7 +9,7 @@ html {
 
 body {
     height: 100%;
-    background-color: rgb(229 229 229);
+    background-color: rgb(255 246 242);
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-size: 16px;
@@ -80,11 +80,11 @@ img {
     margin: 10px auto;
     padding-bottom: 60px;
     font-size: 1em;
-    box-shadow: 0 0 4px 1px rgb(0 0 0 / 12%);
+    
 }
 
 .container-box {
-    background: rgb(247 247 247);
+    background: rgb(255, 255, 255);
     padding-bottom: 5px;
     /*padding: 10px;*/
 }
@@ -114,9 +114,11 @@ img {
 nav {
     padding: 2px 10px;
     font-size: .95em;
-    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dbdbdb;
     /* box-shadow: inset 0 0px 4px rgb(0 0 0 / .2); */
     background: #fff;
+    margin-bottom: 6px;
+    /* border-top: 1px solid #dfdfdf; */
 }
 
 nav .item {
@@ -125,8 +127,8 @@ nav .item {
 }
 
 nav .item.active a {
-    color: #1e1e1e;
-    text-decoration: underline;
+    /*color: #1e1e1e;*/
+    color: hsl(11deg 67.4% 49.01% / 91%);
     font-weight: 600;
 }
 
@@ -138,7 +140,7 @@ a {
     outline: none;
 }
 
-nav .item:hover a {
+nav .item:not(.active):hover a {
     color: #000;
 }
 
@@ -153,7 +155,7 @@ nav .item:hover a {
 }
 
 section.news-section {
-    padding: 0 3px;
+    padding: 14px 3px 0 3px;
 }
 
 .news-list.small-news {
@@ -219,8 +221,8 @@ section.news-section {
 
 h1 {
     font-size: 1.5em;
-    font-weight: 500;
-    color: #1a1a1a;
+    font-weight: 400;
+    color: #0e0e0e;
     padding: 10px 10px;
 }
 
@@ -236,8 +238,6 @@ h1 {
     background-color: #fff;
     /* border-left: 3px solid #fff; */
     /* border-right: 3px solid #fff; */
-    border-bottom: 2px solid #000;
-    border-top: 2px solid #000;
 }
 
 .text-roller {
@@ -319,14 +319,15 @@ h1 {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
-    color: hsl(11deg 98% 3% / 91%);
+    color: hsl(0deg 0% 19.05% / 91%);
     /* filter: drop-shadow(-2px -1px 0px black); */
+    /* text-shadow: 19px -7px rgb(0 0 0 / .2); */
 }
 
 .line-separator {
     margin: 2px 0 11px 0;
     height: 1px;
-    background: #cbcbcb;
+    background: #d9d9d9;
 }
