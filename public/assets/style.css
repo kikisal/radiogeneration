@@ -88,7 +88,7 @@ img {
     position: fixed;
     width: 400px;
     height: 500px;
-    background-color: rgb(231, 231, 231);
+    background-color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -97,8 +97,57 @@ img {
     border-left: 1px solid #0000001f;
     border-right: 1px solid #0000001f;
     border-top: 3px solid #ff5454;
-    padding: 8px;
+    padding: 33px 8px 8px 8px;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px #00000034;
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.over .overlay .new {
+    background-color: rgb(231, 231, 231);
+    margin: 5px;
+}
+
+.over .overlay .new.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 30%;
+}
+
+.over .overlay .new.image .img {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%;
+    background: #e7e7e7;
+}
+
+.over .overlay .new.title-container {
+    background-color: white;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.over .overlay .new.title-container .title {
+    font-size: 24px;
+}
+
+.over .overlay .new.title-container .info {
+    display: flex;
+}
+
+.over .overlay .new.title-container .info div {
+    margin: 2px;
+}
+
+.over .overlay .new.desc {
+    background-color: #e7e7e7;
+    height: 60%;
 }
 
 .content {
