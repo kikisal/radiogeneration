@@ -402,3 +402,15 @@ h1 {
     padding: 0 10px 8px 10px;
     font-size: 15px;
 }
+
+.small-news.news-list .news-image {
+    background-color: #f1f1f1;
+}
+
+.small-news.news-list .text-container {
+    border-top: none;
+}
+
+.small-news.news-list .news-image::after {
+    display: none;
+}
