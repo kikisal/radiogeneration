@@ -221,8 +221,7 @@ section.news-section {
 /*    transform: scale(1.04); */
 }
 
-
-.news-item:hover .text-container .text-title {
+.news-item:hover .text-container .text-title, .news-item-small:hover .text-container .text-title {
     text-decoration: underline;
 }
 
