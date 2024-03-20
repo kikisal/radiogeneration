@@ -75,6 +75,17 @@ img {
     width: 8px;
 }
 
+.overlay {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    top: 25%;
+    left: 25%;
+    z-index: 999;
+
+}
+
 .content {
     width: 1024px;
     margin: 10px auto;
