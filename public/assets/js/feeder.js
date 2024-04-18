@@ -38,9 +38,13 @@ const FeedsModel = [
     }
 ];
 
+function test() {
+    
+}
+
 async function http_fetch(req_desc) {
     try {            
-        const res  = await fetch(Feeder.FEEDER_ENDPOINT + `${!chunk ? '' : chunk}`);
+        const res  = await fetch(req_desc.endpoint);
         
         if (res.status != 200)
             return null;
@@ -71,9 +75,10 @@ class Feeder {
         this._initialTimestamp = -1;
     }
 
-    load() { 
+    async load() { 
         this.clear();
-        this.getFeeds(0);
+        const result = await this.getFeeds(0);
+        console.log("result: ", result);
     }
 
     async getFeeds(chunk) {
